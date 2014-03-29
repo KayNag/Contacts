@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="ordering_options">
+        <item>@string/select_sorting_name_increasing</item>
+        <item>@string/select_sorting_name_decreasing</item>
+        <item>@string/select_sorting_surname_increasing</item>
+        <item>@string/select_sorting_surname_decreasing</item>
+    </array>
+</resources>

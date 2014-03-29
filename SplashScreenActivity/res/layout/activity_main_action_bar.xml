@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+   	xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/linearLayout1"
+    android:layout_width="match_parent"
+    android:layout_height="54dp"
+    android:orientation="vertical"
+    android:background="@drawable/action_bar_background">
+    <View
+	    android:layout_width="match_parent"
+	    android:layout_height="1px"
+	    android:background="@drawable/action_bar_top_divider" >
+	</View>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal" >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="10dp"
+            android:textSize="15dp"
+            android:gravity="center"
+            android:text="@string/contacts_bar_label"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColor="#FFFFFF" >
+        </TextView>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="right"
+            android:orientation="horizontal" >
+            <View
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:background="@drawable/action_bar_divider" >
+            </View>
+            <RelativeLayout 
+			    android:layout_width="60dp"
+	    	    android:layout_height="match_parent">
+	    		<ImageButton
+	    		    android:id="@+id/contact_ordering"
+	    		    android:layout_width="match_parent"
+	    		    android:layout_height="match_parent"
+	    		    android:layout_centerInParent="true"
+	    		    android:padding="15dp"
+	    			android:scaleType="fitCenter"
+	    		    android:background="@drawable/contact_add_button_selector"
+	    		    android:src="@drawable/contact_order_button" >
+	            </ImageButton>
+            </RelativeLayout>
+        </LinearLayout>
+    </LinearLayout>
+   	<View
+	    android:layout_width="match_parent"
+	    android:layout_height="1px"
+	    android:background="@drawable/action_bar_bottom_divider" >
+	</View>
+</LinearLayout>

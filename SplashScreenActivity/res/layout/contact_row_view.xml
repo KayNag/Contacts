@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout 
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:client="http://schemas.android.com/apk/res-auto"
+    android:layout_width="fill_parent"
+    android:layout_height="72dp"
+    android:layout_margin="0dp"
+    android:orientation="vertical"
+    android:background="@drawable/contact_row_background_selector">
+    <View
+	    android:layout_width="match_parent"
+	    android:layout_height="1px"
+	    android:background="@drawable/action_bar_top_divider" >
+	</View>
+    <LinearLayout 
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_marginLeft="5dp"
+        android:orientation="horizontal">
+	    <ImageView
+	        android:id="@+id/contact_thumbnail"
+	        android:layout_width="0dp"
+	        android:layout_height="fill_parent"
+	        android:layout_margin="5dp"
+	        android:layout_weight="1"
+	        android:contentDescription="@drawable/no_thumbnail"
+	        android:src="@drawable/no_thumbnail" />
+	    <LinearLayout
+	        android:layout_width="0dp"
+	        android:layout_height="match_parent"
+	        android:layout_margin="10dp"
+	        android:layout_weight="4"
+	        android:orientation="vertical" >
+	        <kay.SI.contacts.views.CustomTextView
+	            android:id="@+id/contact_name"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:text="placeholder"
+	            android:textColor="@drawable/contact_row_name_text_selector"
+	            android:layout_marginTop="5dp"
+	            android:textSize="20dp"
+	            android:singleLine="true"
+	            client:shadowColor="@color/contact_row_shadow_radius_selector"
+		        android:shadowRadius="2"
+		        android:shadowDy="1" />
+	        <kay.SI.contacts.views.CustomTextView
+	            android:id="@+id/contact_job_position"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            client:shadowColor="@color/contact_row_shadow_radius_selector"
+	            android:shadowDy="1"
+	            android:shadowRadius="2"
+	            android:text="placeholder"
+	            android:textSize="12dp"
+	            android:singleLine="true"
+	            android:textAppearance="?android:attr/textAppearanceSmall"
+	            android:textColor="@drawable/contact_row_job_title_text_selector" />
+	    </LinearLayout>
+		<LinearLayout
+	        android:layout_width="30dp"
+	        android:layout_centerInParent="true"
+	        android:layout_height="match_parent"
+	        android:layout_marginRight="15dp"
+	        >
+		    <ImageView
+	        android:id="@+id/contact_starred"
+	        android:layout_width="0dp"
+	        android:layout_height="wrap_content"
+	        android:layout_gravity="center"
+	        android:layout_weight="1"
+	        android:contentDescription="@drawable/favorite_contact"
+	        android:src="@drawable/favorite_contact_active" /> 
+		</LinearLayout>
+    </LinearLayout>
+    <View
+	    android:layout_width="match_parent"
+	    android:layout_height="1px"
+	    android:background="@drawable/action_bar_bottom_divider" >
+	</View>
+</LinearLayout>

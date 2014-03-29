@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">ScreenInteractioners</string>
+    <string name="action_settings">Settings</string>
+    <string name="contacts_bar_label">Medarbetare</string>
+    <string name="title_activity_splash_screen">SplashScreenActivity</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="loading_contacts">Hämtar medarbetare...</string>
+    <string name="title_activity_contact_full_view">ContactFullViewActivity</string>
+    <string name="telephone_label">Telefon</string>
+    <string name="email_label">E-post</string>
+    <string name="website_label">Webbsida</string>
+    <string name="select_sorting">Sortera</string>
+    <string name="select_sorting_name_increasing">Förnamn stigande</string>
+    <string name="select_sorting_name_decreasing">Förnamn fallande</string>
+    <string name="select_sorting_surname_increasing">Efternamn stigande</string>
+    <string name="select_sorting_surname_decreasing">Efternamn fallande</string>
+    <string name="choose_email_client">Välj en e-postklient</string>
+    <string name="company">Screen Interaction</string>
+    <string name="action_ordering">Sortera</string>
+</resources>
