@@ -1,9 +1,11 @@
 package kay.SI.contacts;
 
 
-import kay.SI.contacts.controllers.ContactArrayAdapter;
-import kay.SI.contacts.controllers.ContactsController;
+
+import kay.SI.contacts.controllers.Adapter;
+import kay.SI.contacts.controllers.Mapper;
 import kay.SI.contacts.models.Contact;
+
 
 
 
@@ -21,12 +23,12 @@ import android.widget.ImageButton;
 import android.widget.ListView;
 
 public class MainActivity extends Activity implements OnTouchListener {
-	final private ContactsController contacts = ContactsController.getInstance();
+	final private Mapper contacts = Mapper.getInstance();
 	
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
-		setContentView(R.layout.activity_main);
+		setContentView(R.layout.welcome);
 		
 		setupContactList();
 	    
@@ -35,7 +37,7 @@ public class MainActivity extends Activity implements OnTouchListener {
 	
 	public void setupContactList() {
 	    ListView list = (ListView)findViewById(R.id.list);
-	    ContactArrayAdapter dataAdapter = new ContactArrayAdapter(this, R.layout.contact_row_view, contacts);
+	    Adapter dataAdapter = new Adapter(this, R.layout.rowdetail, contacts);
 	    
 	    list.setOnItemClickListener(new OnItemClickListener() {
 			@Override

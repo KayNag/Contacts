@@ -4,14 +4,19 @@ import java.util.ArrayList;
 
 import kay.SI.contacts.models.Contact;
 
+
 import org.json.JSONArray;
 import org.json.JSONException;
 
 public class ScreenInteractionContactFetcher extends URLFetcher<ArrayList<Contact>> {
 	@Override
-	protected ArrayList<Contact> postProcess(byte[] response) {
-		ArrayList<Contact> contacts = new ArrayList<Contact>();
+	protected ArrayList<Contact> postProcess(byte[] response)
+	
+	
+	 {
 		String jsonResponse = new String(response);
+		ArrayList<Contact> contacts = new ArrayList<Contact>();
+		
 		try {
 			JSONArray arr = new JSONArray(jsonResponse);
 			

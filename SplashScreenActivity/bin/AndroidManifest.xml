@@ -15,7 +15,7 @@
         android:label="@string/app_name"
         android:theme="@style/empty">
         <activity
-            android:name="kay.SI.contacts.SplashScreenActivity"
+            android:name="Splash"
             android:label="@string/app_name"
             android:noHistory="true"
             android:screenOrientation="portrait"
