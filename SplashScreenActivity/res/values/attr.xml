@@ -4,7 +4,7 @@
         <attr format="reference" name="CustomTextView"/>
     </declare-styleable>
 
-    <declare-styleable name="CustomTextView">
+    <declare-styleable name="Layouttxt">
         <attr name="shadowColor" format="color|reference"/>
         <attr name="android:shadowDx"/>
         <attr name="android:shadowDy"/>

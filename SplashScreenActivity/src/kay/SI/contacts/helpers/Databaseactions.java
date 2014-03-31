@@ -1,8 +1,8 @@
-package kay.SI.contacts.controllers;
+package kay.SI.contacts.helpers;
 
 import java.util.ArrayList;
 
-import kay.SI.contacts.models.Contact;
+
 
 import org.json.JSONException;
 import org.json.JSONObject;

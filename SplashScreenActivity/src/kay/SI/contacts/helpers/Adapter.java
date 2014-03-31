@@ -1,13 +1,13 @@
-package kay.SI.contacts.controllers;
+package kay.SI.contacts.helpers;
 
 import java.util.ArrayList;
 
 import kay.SI.contacts.R;
 
-import kay.SI.contacts.controllers.Icon;
-import kay.SI.contacts.controllers.Mapper;
-import kay.SI.contacts.controllers.URLFetcher.OnFetched;
-import kay.SI.contacts.models.Contact;
+import kay.SI.contacts.helpers.Icon;
+import kay.SI.contacts.helpers.Mapper;
+import kay.SI.contacts.helpers.URLFetcher.OnFetched;
+
 
 
 

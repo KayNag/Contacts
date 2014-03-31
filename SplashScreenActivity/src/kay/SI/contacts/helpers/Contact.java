@@ -1,4 +1,4 @@
-package kay.SI.contacts.models;
+package kay.SI.contacts.helpers;
 
 import org.json.JSONException;
 import org.json.JSONObject;

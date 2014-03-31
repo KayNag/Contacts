@@ -25,7 +25,6 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
     }
     public static final class color {
         public static final int blue=0x7f050000;
-        public static final int contact_row_shadow_radius_selector=0x7f050001;
     }
     public static final class dimen {
         /**  Default screen margins, per the Android Design guidelines. 
@@ -66,16 +65,15 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
         public static final int ic_launcher=0x7f020019;
         public static final int no_picture=0x7f02001a;
         public static final int no_thumbnail=0x7f02001b;
-        public static final int rounded_rectangle=0x7f02001c;
-        public static final int selectable_background_action_bar=0x7f02001d;
-        public static final int splash=0x7f02001e;
-        public static final int splash0=0x7f02001f;
-        public static final int splash1=0x7f020020;
-        public static final int splash2=0x7f020021;
-        public static final int splash3=0x7f020022;
-        public static final int splash4=0x7f020023;
-        public static final int splashanim=0x7f020024;
-        public static final int splashbg=0x7f020025;
+        public static final int selectable_background_action_bar=0x7f02001c;
+        public static final int splash=0x7f02001d;
+        public static final int splash0=0x7f02001e;
+        public static final int splash1=0x7f02001f;
+        public static final int splash2=0x7f020020;
+        public static final int splash3=0x7f020021;
+        public static final int splash4=0x7f020022;
+        public static final int splashanim=0x7f020023;
+        public static final int splashbg=0x7f020024;
     }
     public static final class id {
         public static final int SplashImageView=0x7f090011;
@@ -110,24 +108,23 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
         public static final int welcome=0x7f030003;
     }
     public static final class string {
-        public static final int action_ordering=0x7f070011;
+        public static final int action_ordering=0x7f070010;
         public static final int action_settings=0x7f070001;
         public static final int app_name=0x7f070000;
-        public static final int choose_email_client=0x7f07000f;
-        public static final int company=0x7f070010;
+        public static final int choose_email_client=0x7f07000e;
+        public static final int company=0x7f07000f;
         public static final int contacts_bar_label=0x7f070002;
-        public static final int email_label=0x7f070008;
-        public static final int hello_world=0x7f070004;
-        public static final int loading_contacts=0x7f070005;
-        public static final int select_sorting=0x7f07000a;
-        public static final int select_sorting_name_decreasing=0x7f07000c;
-        public static final int select_sorting_name_increasing=0x7f07000b;
-        public static final int select_sorting_surname_decreasing=0x7f07000e;
-        public static final int select_sorting_surname_increasing=0x7f07000d;
-        public static final int telephone_label=0x7f070007;
-        public static final int title_activity_contact_full_view=0x7f070006;
+        public static final int email_label=0x7f070007;
+        public static final int loading_contacts=0x7f070004;
+        public static final int select_sorting=0x7f070009;
+        public static final int select_sorting_name_decreasing=0x7f07000b;
+        public static final int select_sorting_name_increasing=0x7f07000a;
+        public static final int select_sorting_surname_decreasing=0x7f07000d;
+        public static final int select_sorting_surname_increasing=0x7f07000c;
+        public static final int telephone_label=0x7f070006;
+        public static final int title_activity_contact_full_view=0x7f070005;
         public static final int title_activity_splash_screen=0x7f070003;
-        public static final int website_label=0x7f070009;
+        public static final int website_label=0x7f070008;
     }
     public static final class style {
         public static final int ActionButton=0x7f080006;
@@ -155,55 +152,55 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
         public static final int empty=0x7f080003;
     }
     public static final class styleable {
-        /** Attributes that can be used with a CustomTextView.
+        /** Attributes that can be used with a Layouttxt.
            <p>Includes the following attributes:</p>
            <table>
            <colgroup align="left" />
            <colgroup align="left" />
            <tr><th>Attribute</th><th>Description</th></tr>
-           <tr><td><code>{@link #CustomTextView_android_shadowDx android:shadowDx}</code></td><td></td></tr>
-           <tr><td><code>{@link #CustomTextView_android_shadowDy android:shadowDy}</code></td><td></td></tr>
-           <tr><td><code>{@link #CustomTextView_android_shadowRadius android:shadowRadius}</code></td><td></td></tr>
-           <tr><td><code>{@link #CustomTextView_shadowColor kay.SI.contacts:shadowColor}</code></td><td></td></tr>
+           <tr><td><code>{@link #Layouttxt_android_shadowDx kay.SI.contacts:android_shadowDx}</code></td><td></td></tr>
+           <tr><td><code>{@link #Layouttxt_android_shadowDy kay.SI.contacts:android_shadowDy}</code></td><td></td></tr>
+           <tr><td><code>{@link #Layouttxt_android_shadowRadius kay.SI.contacts:android_shadowRadius}</code></td><td></td></tr>
+           <tr><td><code>{@link #Layouttxt_shadowColor kay.SI.contacts:shadowColor}</code></td><td></td></tr>
            </table>
-           @see #CustomTextView_android_shadowDx
-           @see #CustomTextView_android_shadowDy
-           @see #CustomTextView_android_shadowRadius
-           @see #CustomTextView_shadowColor
+           @see #Layouttxt_android_shadowDx
+           @see #Layouttxt_android_shadowDy
+           @see #Layouttxt_android_shadowRadius
+           @see #Layouttxt_shadowColor
          */
-        public static final int[] CustomTextView = {
+        public static final int[] Layouttxt = {
             0x01010162, 0x01010163, 0x01010164, 0x7f010001
         };
         /**
-          <p>This symbol is the offset where the {@link android.R.attr#shadowDx}
-          attribute's value can be found in the {@link #CustomTextView} array.
-          @attr name android:shadowDx
+          <p>This symbol is the offset where the {@link kay.SI.contacts.R.attr#android_shadowDx}
+          attribute's value can be found in the {@link #Layouttxt} array.
+          @attr name android:android_shadowDx
         */
-        public static final int CustomTextView_android_shadowDx = 0;
+        public static final int Layouttxt_android_shadowDx = 0;
         /**
-          <p>This symbol is the offset where the {@link android.R.attr#shadowDy}
-          attribute's value can be found in the {@link #CustomTextView} array.
-          @attr name android:shadowDy
+          <p>This symbol is the offset where the {@link kay.SI.contacts.R.attr#android_shadowDy}
+          attribute's value can be found in the {@link #Layouttxt} array.
+          @attr name android:android_shadowDy
         */
-        public static final int CustomTextView_android_shadowDy = 1;
+        public static final int Layouttxt_android_shadowDy = 1;
         /**
-          <p>This symbol is the offset where the {@link android.R.attr#shadowRadius}
-          attribute's value can be found in the {@link #CustomTextView} array.
-          @attr name android:shadowRadius
+          <p>This symbol is the offset where the {@link kay.SI.contacts.R.attr#android_shadowRadius}
+          attribute's value can be found in the {@link #Layouttxt} array.
+          @attr name android:android_shadowRadius
         */
-        public static final int CustomTextView_android_shadowRadius = 2;
+        public static final int Layouttxt_android_shadowRadius = 2;
         /**
           <p>This symbol is the offset where the {@link kay.SI.contacts.R.attr#shadowColor}
-          attribute's value can be found in the {@link #CustomTextView} array.
+          attribute's value can be found in the {@link #Layouttxt} array.
 
 
           <p>May be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
 <p>May be a color value, in the form of "<code>#<i>rgb</i></code>", "<code>#<i>argb</i></code>",
 "<code>#<i>rrggbb</i></code>", or "<code>#<i>aarrggbb</i></code>".
-          @attr name kay.SI.contacts:shadowColor
+          @attr name android:shadowColor
         */
-        public static final int CustomTextView_shadowColor = 3;
+        public static final int Layouttxt_shadowColor = 3;
         /** Attributes that can be used with a Theme.
            <p>Includes the following attributes:</p>
            <table>
@@ -224,7 +221,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name kay.SI.contacts:CustomTextView
+          @attr name android:CustomTextView
         */
         public static final int Theme_CustomTextView = 0;
     };

@@ -1,6 +1,6 @@
-package kay.SI.contacts.controllers;
+package kay.SI.contacts.helpers;
 
-import kay.SI.contacts.models.Contact;
+
 
 import android.content.Intent;
 import android.net.Uri;

@@ -1,14 +1,14 @@
-package kay.SI.contacts.controllers;
+package kay.SI.contacts.helpers;
 
 import java.util.ArrayList;
 
-import kay.SI.contacts.models.Contact;
+
 
 
 import org.json.JSONArray;
 import org.json.JSONException;
 
-public class ScreenInteractionContactFetcher extends URLFetcher<ArrayList<Contact>> {
+public class Fetcher extends URLFetcher<ArrayList<Contact>> {
 	@Override
 	protected ArrayList<Contact> postProcess(byte[] response)
 	

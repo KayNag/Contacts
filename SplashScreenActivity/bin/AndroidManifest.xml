@@ -33,7 +33,7 @@
              >
         </activity>
         <activity
-            android:name="kay.SI.contacts.ContactFullViewActivity"
+            android:name="kay.SI.contacts.ViewActivity"
             android:label="@string/title_activity_contact_full_view"
             android:screenOrientation="portrait"
    			android:configChanges="orientation"

@@ -3,11 +3,12 @@ package kay.SI.contacts;
 import java.io.UnsupportedEncodingException;
 import java.net.URLEncoder;
 
-import kay.SI.contacts.controllers.Icon;
-import kay.SI.contacts.controllers.Intents;
-import kay.SI.contacts.controllers.URLFetcher;
-import kay.SI.contacts.controllers.URLFetcher.OnFetched;
-import kay.SI.contacts.models.Contact;
+import kay.SI.contacts.helpers.Contact;
+import kay.SI.contacts.helpers.Icon;
+import kay.SI.contacts.helpers.Intents;
+import kay.SI.contacts.helpers.URLFetcher;
+import kay.SI.contacts.helpers.URLFetcher.OnFetched;
+
 
 
 import org.json.JSONArray;
@@ -25,7 +26,7 @@ import android.view.View.OnTouchListener;
 import android.widget.ImageView;
 import android.widget.TextView;
 
-public class ContactFullViewActivity extends Activity implements
+public class ViewActivity extends Activity implements
 		OnTouchListener {
 	private Contact contact;
 

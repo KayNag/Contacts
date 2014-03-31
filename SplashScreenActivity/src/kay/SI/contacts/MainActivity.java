@@ -2,9 +2,10 @@ package kay.SI.contacts;
 
 
 
-import kay.SI.contacts.controllers.Adapter;
-import kay.SI.contacts.controllers.Mapper;
-import kay.SI.contacts.models.Contact;
+import kay.SI.contacts.helpers.Adapter;
+import kay.SI.contacts.helpers.Contact;
+import kay.SI.contacts.helpers.Mapper;
+
 
 
 
@@ -70,7 +71,7 @@ public class MainActivity extends Activity implements OnTouchListener {
 	}
 	
 	public void LoadContactFullView(Contact contact) {
-		Intent intent = new Intent(this, ContactFullViewActivity.class);
+		Intent intent = new Intent(this, ViewActivity.class);
 		intent.putExtra("contact", contact.toString());
 		startActivity(intent);
 	}

@@ -31,7 +31,7 @@
 	        android:layout_margin="10dp"
 	        android:layout_weight="4"
 	        android:orientation="vertical" >
-	        <kay.SI.contacts.views.CustomTextView
+	        <kay.SI.contacts.Layouttxt
 	            android:id="@+id/contact_name"
 	            android:layout_width="wrap_content"
 	            android:layout_height="wrap_content"
@@ -40,14 +40,14 @@
 	            android:layout_marginTop="5dp"
 	            android:textSize="20dp"
 	            android:singleLine="true"
-	            client:shadowColor="@color/contact_row_shadow_radius_selector"
+	            
 		        android:shadowRadius="2"
 		        android:shadowDy="1" />
-	        <kay.SI.contacts.views.CustomTextView
+	        <kay.SI.contacts.Layouttxt
 	            android:id="@+id/contact_job_position"
 	            android:layout_width="wrap_content"
 	            android:layout_height="wrap_content"
-	            client:shadowColor="@color/contact_row_shadow_radius_selector"
+	            
 	            android:shadowDy="1"
 	            android:shadowRadius="2"
 	            android:text="placeholder"

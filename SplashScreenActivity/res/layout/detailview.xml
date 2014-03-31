@@ -120,8 +120,8 @@
 	        android:shadowDy="1"
 	        android:textColor="#FFFFFF"
 	        android:padding="10dp"
-	        android:text="asdfasdf"
-	        android:background="@drawable/rounded_rectangle"
+	        android:text="SI"
+	        
 	        android:textAppearance="?android:attr/textAppearanceMedium" />
     </RelativeLayout>
     <!-- CONTACT DETAILS -->

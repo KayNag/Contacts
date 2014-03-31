@@ -1,4 +1,4 @@
-package kay.SI.contacts.controllers;
+package kay.SI.contacts.helpers;
 
 import java.io.ByteArrayOutputStream;
 

@@ -1,4 +1,4 @@
-package kay.SI.contacts.controllers;
+package kay.SI.contacts.helpers;
 
 import java.io.InputStream;
 import java.net.HttpURLConnection;
@@ -14,18 +14,15 @@ public class Icon extends URLFetcher<Bitmap> {
 	@Override
 	protected byte[] doInBackground(String... arg0) {
 		byte[] result = new byte[0];
-		
+		String s_url;
 		try {
-			URL url = new URL(arg0[0]);
+			s_url = arg0[0];
+			InputStream istr;
+			URL url = new URL(s_url);
 			
-			HttpURLConnection connection = (HttpURLConnection)url.openConnection();
-			connection.setRequestMethod("GET");
-			connection.connect();
-			
-			InputStream is = connection.getInputStream();
-			// TO-DO fix URLFetcher, it fails to get properly images 
-			// probably due to the buffer size
-			this.result = BitmapFactory.decodeStream(is);
+			istr = url.openStream();
+		
+			this.result = BitmapFactory.decodeStream(istr);
 		} catch(Exception ex) {
 			Log.d("FetcherError", ex.toString());
 		}

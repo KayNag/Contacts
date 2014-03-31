@@ -1,12 +1,12 @@
-package kay.SI.contacts.controllers;
+package kay.SI.contacts.helpers;
 
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.Comparator;
 
-import kay.SI.contacts.models.Contact;
 
-public class Mapper implements ScreenInteractionContactFetcher.OnFetched {
+
+public class Mapper implements Fetcher.OnFetched {
 	private ArrayList<Contact> contacts;
 	private static Mapper instance = null;
 	private static final String SCREEN_INTERACTION_CONTACTS_URL = "http://www.screeninteraction.com/~simonedstrom/worksample-android/contacts.json";
@@ -42,7 +42,7 @@ public class Mapper implements ScreenInteractionContactFetcher.OnFetched {
 	}
 	
 	public void refresh() {
-		new ScreenInteractionContactFetcher()
+		new Fetcher()
 			.setOnFetched(this)
 			.execute(SCREEN_INTERACTION_CONTACTS_URL);
 	}

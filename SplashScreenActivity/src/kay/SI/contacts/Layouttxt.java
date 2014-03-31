@@ -1,4 +1,4 @@
-package kay.SI.contacts.views;
+package kay.SI.contacts;
 
 import kay.SI.contacts.R;
 import kay.SI.contacts.R.styleable;
@@ -12,9 +12,9 @@ import android.content.Context;
 
 // OBS: class added to obtain color selector in TextView
 // for selection of rows in contact list
-public class CustomTextView extends TextView
+public class Layouttxt extends TextView
 {
-    private static String TAG = "CustomTextView";
+    private static String TAG = "Layouttxt";
 
     private ColorStateList mShadowColors;
     private float mShadowDx;
@@ -22,18 +22,18 @@ public class CustomTextView extends TextView
     private float mShadowRadius;
 
 
-    public CustomTextView(Context context)
+    public Layouttxt(Context context)
     {
         super(context);
     }
 
-    public CustomTextView(Context context, AttributeSet attrs)
+    public Layouttxt(Context context, AttributeSet attrs)
     {
         super(context, attrs);
         init(context, attrs, 0);
     }
 
-    public CustomTextView(Context context, AttributeSet attrs, int defStyle)
+    public Layouttxt(Context context, AttributeSet attrs, int defStyle)
     {
         super(context, attrs, defStyle);
         init(context, attrs, 0);
@@ -41,26 +41,26 @@ public class CustomTextView extends TextView
 
     private void init(Context context, AttributeSet attrs, int defStyle)
     {
-        TypedArray a = context.obtainStyledAttributes(attrs, R.styleable.CustomTextView, defStyle, 0);
+        TypedArray a = context.obtainStyledAttributes(attrs, R.styleable.Layouttxt, defStyle, 0);
 
         final int attributeCount = a.getIndexCount();
         for (int i = 0; i < attributeCount; i++) {
             int curAttr = a.getIndex(i);
 
             switch (curAttr) {                  
-                case R.styleable.CustomTextView_shadowColor:
+                case R.styleable.Layouttxt_shadowColor:
                     mShadowColors = a.getColorStateList(curAttr);
                     break;
 
-                case R.styleable.CustomTextView_android_shadowDx:
+                case R.styleable.Layouttxt_android_shadowDx:
                     mShadowDx = a.getFloat(curAttr, 0);
                     break;
 
-                case R.styleable.CustomTextView_android_shadowDy:
+                case R.styleable.Layouttxt_android_shadowDy:
                     mShadowDy = a.getFloat(curAttr, 0);
                     break;
 
-                case R.styleable.CustomTextView_android_shadowRadius:
+                case R.styleable.Layouttxt_android_shadowRadius:
                     mShadowRadius = a.getFloat(curAttr, 0);
                     break;  
 
